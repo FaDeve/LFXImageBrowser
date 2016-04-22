@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C25F881CC9F843001FF66B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25F871CC9F843001FF66B /* main.m */; };
+		18C25F8B1CC9F843001FF66B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25F8A1CC9F843001FF66B /* AppDelegate.m */; };
+		18C25F8E1CC9F843001FF66B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25F8D1CC9F843001FF66B /* ViewController.m */; };
+		18C25F911CC9F843001FF66B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C25F8F1CC9F843001FF66B /* Main.storyboard */; };
+		18C25F931CC9F843001FF66B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C25F921CC9F843001FF66B /* Assets.xcassets */; };
+		18C25F961CC9F843001FF66B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C25F941CC9F843001FF66B /* LaunchScreen.storyboard */; };
+		18C25FA11CC9F843001FF66B /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25FA01CC9F843001FF66B /* _____Tests.m */; };
+		18C25FAC1CC9F843001FF66B /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25FAB1CC9F843001FF66B /* _____UITests.m */; };
+		18C25FBC1CC9F972001FF66B /* LFXImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25FBB1CC9F972001FF66B /* LFXImageItem.m */; };
+		18C25FBF1CCA0780001FF66B /* LFXImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25FBE1CCA0780001FF66B /* LFXImageBrowserViewController.m */; };
+		18C25FC21CCA0A18001FF66B /* LFXImageBrowserFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25FC11CCA0A18001FF66B /* LFXImageBrowserFlowLayout.m */; };
+		18C25FC51CCA0AD8001FF66B /* LFXCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25FC41CCA0AD8001FF66B /* LFXCollectionViewCell.m */; };
+		18C25FC81CCA0AFF001FF66B /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C25FC71CCA0AFF001FF66B /* ImageModel.m */; };
+		18F8D40B1CCA211A005F2741 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8D40A1CCA211A005F2741 /* UIImage+ImageEffects.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C25F9D1CC9F843001FF66B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C25F7B1CC9F843001FF66B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C25F821CC9F843001FF66B;
+			remoteInfo = "图片浏览器";
+		};
+		18C25FA81CC9F843001FF66B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C25F7B1CC9F843001FF66B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C25F821CC9F843001FF66B;
+			remoteInfo = "图片浏览器";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C25F831CC9F843001FF66B /* 图片浏览器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "图片浏览器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C25F871CC9F843001FF66B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18C25F891CC9F843001FF66B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18C25F8A1CC9F843001FF66B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18C25F8C1CC9F843001FF66B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18C25F8D1CC9F843001FF66B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18C25F901CC9F843001FF66B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18C25F921CC9F843001FF66B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18C25F951CC9F843001FF66B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18C25F971CC9F843001FF66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C25F9C1CC9F843001FF66B /* 图片浏览器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "图片浏览器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C25FA01CC9F843001FF66B /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		18C25FA21CC9F843001FF66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C25FA71CC9F843001FF66B /* 图片浏览器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "图片浏览器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C25FAB1CC9F843001FF66B /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		18C25FAD1CC9F843001FF66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C25FBA1CC9F972001FF66B /* LFXImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFXImageItem.h; sourceTree = "<group>"; };
+		18C25FBB1CC9F972001FF66B /* LFXImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFXImageItem.m; sourceTree = "<group>"; };
+		18C25FBD1CCA0780001FF66B /* LFXImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFXImageBrowserViewController.h; sourceTree = "<group>"; };
+		18C25FBE1CCA0780001FF66B /* LFXImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFXImageBrowserViewController.m; sourceTree = "<group>"; };
+		18C25FC01CCA0A18001FF66B /* LFXImageBrowserFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFXImageBrowserFlowLayout.h; sourceTree = "<group>"; };
+		18C25FC11CCA0A18001FF66B /* LFXImageBrowserFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFXImageBrowserFlowLayout.m; sourceTree = "<group>"; };
+		18C25FC31CCA0AD8001FF66B /* LFXCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFXCollectionViewCell.h; sourceTree = "<group>"; };
+		18C25FC41CCA0AD8001FF66B /* LFXCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFXCollectionViewCell.m; sourceTree = "<group>"; };
+		18C25FC61CCA0AFF001FF66B /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		18C25FC71CCA0AFF001FF66B /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		18F8D4091CCA211A005F2741 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "../UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		18F8D40A1CCA211A005F2741 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		18F8D40C1CCA292A005F2741 /* const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = const.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C25F801CC9F843001FF66B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C25F991CC9F843001FF66B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C25FA41CC9F843001FF66B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C25F7A1CC9F843001FF66B = {
+			isa = PBXGroup;
+			children = (
+				18C25F851CC9F843001FF66B /* 图片浏览器 */,
+				18C25F9F1CC9F843001FF66B /* 图片浏览器Tests */,
+				18C25FAA1CC9F843001FF66B /* 图片浏览器UITests */,
+				18C25F841CC9F843001FF66B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C25F841CC9F843001FF66B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C25F831CC9F843001FF66B /* 图片浏览器.app */,
+				18C25F9C1CC9F843001FF66B /* 图片浏览器Tests.xctest */,
+				18C25FA71CC9F843001FF66B /* 图片浏览器UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C25F851CC9F843001FF66B /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				18C25FB91CC9F85F001FF66B /* 图片浏览器 */,
+				18C25F891CC9F843001FF66B /* AppDelegate.h */,
+				18C25F8A1CC9F843001FF66B /* AppDelegate.m */,
+				18C25F8C1CC9F843001FF66B /* ViewController.h */,
+				18C25F8D1CC9F843001FF66B /* ViewController.m */,
+				18C25F8F1CC9F843001FF66B /* Main.storyboard */,
+				18C25F921CC9F843001FF66B /* Assets.xcassets */,
+				18C25F941CC9F843001FF66B /* LaunchScreen.storyboard */,
+				18C25F971CC9F843001FF66B /* Info.plist */,
+				18C25F861CC9F843001FF66B /* Supporting Files */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
+		18C25F861CC9F843001FF66B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C25F871CC9F843001FF66B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18C25F9F1CC9F843001FF66B /* 图片浏览器Tests */ = {
+			isa = PBXGroup;
+			children = (
+				18C25FA01CC9F843001FF66B /* _____Tests.m */,
+				18C25FA21CC9F843001FF66B /* Info.plist */,
+			);
+			path = "图片浏览器Tests";
+			sourceTree = "<group>";
+		};
+		18C25FAA1CC9F843001FF66B /* 图片浏览器UITests */ = {
+			isa = PBXGroup;
+			children = (
+				18C25FAB1CC9F843001FF66B /* _____UITests.m */,
+				18C25FAD1CC9F843001FF66B /* Info.plist */,
+			);
+			path = "图片浏览器UITests";
+			sourceTree = "<group>";
+		};
+		18C25FB91CC9F85F001FF66B /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				18F8D40D1CCA2A0E005F2741 /* 毛玻璃 */,
+				18C25FBA1CC9F972001FF66B /* LFXImageItem.h */,
+				18C25FBB1CC9F972001FF66B /* LFXImageItem.m */,
+				18C25FBD1CCA0780001FF66B /* LFXImageBrowserViewController.h */,
+				18C25FBE1CCA0780001FF66B /* LFXImageBrowserViewController.m */,
+				18C25FC01CCA0A18001FF66B /* LFXImageBrowserFlowLayout.h */,
+				18C25FC11CCA0A18001FF66B /* LFXImageBrowserFlowLayout.m */,
+				18C25FC31CCA0AD8001FF66B /* LFXCollectionViewCell.h */,
+				18C25FC41CCA0AD8001FF66B /* LFXCollectionViewCell.m */,
+				18C25FC61CCA0AFF001FF66B /* ImageModel.h */,
+				18C25FC71CCA0AFF001FF66B /* ImageModel.m */,
+				18F8D40C1CCA292A005F2741 /* const.h */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
+		18F8D40D1CCA2A0E005F2741 /* 毛玻璃 */ = {
+			isa = PBXGroup;
+			children = (
+				18F8D4091CCA211A005F2741 /* UIImage+ImageEffects.h */,
+				18F8D40A1CCA211A005F2741 /* UIImage+ImageEffects.m */,
+			);
+			path = "毛玻璃";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C25F821CC9F843001FF66B /* 图片浏览器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C25FB01CC9F843001FF66B /* Build configuration list for PBXNativeTarget "图片浏览器" */;
+			buildPhases = (
+				18C25F7F1CC9F843001FF66B /* Sources */,
+				18C25F801CC9F843001FF66B /* Frameworks */,
+				18C25F811CC9F843001FF66B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "图片浏览器";
+			productName = "图片浏览器";
+			productReference = 18C25F831CC9F843001FF66B /* 图片浏览器.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18C25F9B1CC9F843001FF66B /* 图片浏览器Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C25FB31CC9F843001FF66B /* Build configuration list for PBXNativeTarget "图片浏览器Tests" */;
+			buildPhases = (
+				18C25F981CC9F843001FF66B /* Sources */,
+				18C25F991CC9F843001FF66B /* Frameworks */,
+				18C25F9A1CC9F843001FF66B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C25F9E1CC9F843001FF66B /* PBXTargetDependency */,
+			);
+			name = "图片浏览器Tests";
+			productName = "图片浏览器Tests";
+			productReference = 18C25F9C1CC9F843001FF66B /* 图片浏览器Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18C25FA61CC9F843001FF66B /* 图片浏览器UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C25FB61CC9F843001FF66B /* Build configuration list for PBXNativeTarget "图片浏览器UITests" */;
+			buildPhases = (
+				18C25FA31CC9F843001FF66B /* Sources */,
+				18C25FA41CC9F843001FF66B /* Frameworks */,
+				18C25FA51CC9F843001FF66B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C25FA91CC9F843001FF66B /* PBXTargetDependency */,
+			);
+			name = "图片浏览器UITests";
+			productName = "图片浏览器UITests";
+			productReference = 18C25FA71CC9F843001FF66B /* 图片浏览器UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C25F7B1CC9F843001FF66B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LFX;
+				TargetAttributes = {
+					18C25F821CC9F843001FF66B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					18C25F9B1CC9F843001FF66B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 18C25F821CC9F843001FF66B;
+					};
+					18C25FA61CC9F843001FF66B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 18C25F821CC9F843001FF66B;
+					};
+				};
+			};
+			buildConfigurationList = 18C25F7E1CC9F843001FF66B /* Build configuration list for PBXProject "图片浏览器" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C25F7A1CC9F843001FF66B;
+			productRefGroup = 18C25F841CC9F843001FF66B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C25F821CC9F843001FF66B /* 图片浏览器 */,
+				18C25F9B1CC9F843001FF66B /* 图片浏览器Tests */,
+				18C25FA61CC9F843001FF66B /* 图片浏览器UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C25F811CC9F843001FF66B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C25F961CC9F843001FF66B /* LaunchScreen.storyboard in Resources */,
+				18C25F931CC9F843001FF66B /* Assets.xcassets in Resources */,
+				18C25F911CC9F843001FF66B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C25F9A1CC9F843001FF66B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C25FA51CC9F843001FF66B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C25F7F1CC9F843001FF66B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C25F8E1CC9F843001FF66B /* ViewController.m in Sources */,
+				18C25FBF1CCA0780001FF66B /* LFXImageBrowserViewController.m in Sources */,
+				18C25FBC1CC9F972001FF66B /* LFXImageItem.m in Sources */,
+				18C25FC81CCA0AFF001FF66B /* ImageModel.m in Sources */,
+				18C25FC21CCA0A18001FF66B /* LFXImageBrowserFlowLayout.m in Sources */,
+				18F8D40B1CCA211A005F2741 /* UIImage+ImageEffects.m in Sources */,
+				18C25FC51CCA0AD8001FF66B /* LFXCollectionViewCell.m in Sources */,
+				18C25F8B1CC9F843001FF66B /* AppDelegate.m in Sources */,
+				18C25F881CC9F843001FF66B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C25F981CC9F843001FF66B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C25FA11CC9F843001FF66B /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C25FA31CC9F843001FF66B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C25FAC1CC9F843001FF66B /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C25F9E1CC9F843001FF66B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C25F821CC9F843001FF66B /* 图片浏览器 */;
+			targetProxy = 18C25F9D1CC9F843001FF66B /* PBXContainerItemProxy */;
+		};
+		18C25FA91CC9F843001FF66B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C25F821CC9F843001FF66B /* 图片浏览器 */;
+			targetProxy = 18C25FA81CC9F843001FF66B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18C25F8F1CC9F843001FF66B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C25F901CC9F843001FF66B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18C25F941CC9F843001FF66B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C25F951CC9F843001FF66B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C25FAE1CC9F843001FF66B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18C25FAF1CC9F843001FF66B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C25FB11CC9F843001FF66B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "图片浏览器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lfx..-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18C25FB21CC9F843001FF66B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "图片浏览器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lfx..-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18C25FB41CC9F843001FF66B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "图片浏览器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lfx..-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/图片浏览器.app/图片浏览器";
+			};
+			name = Debug;
+		};
+		18C25FB51CC9F843001FF66B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "图片浏览器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lfx..-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/图片浏览器.app/图片浏览器";
+			};
+			name = Release;
+		};
+		18C25FB71CC9F843001FF66B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "图片浏览器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lfx..-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "图片浏览器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		18C25FB81CC9F843001FF66B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "图片浏览器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lfx..-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "图片浏览器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C25F7E1CC9F843001FF66B /* Build configuration list for PBXProject "图片浏览器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C25FAE1CC9F843001FF66B /* Debug */,
+				18C25FAF1CC9F843001FF66B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C25FB01CC9F843001FF66B /* Build configuration list for PBXNativeTarget "图片浏览器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C25FB11CC9F843001FF66B /* Debug */,
+				18C25FB21CC9F843001FF66B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C25FB31CC9F843001FF66B /* Build configuration list for PBXNativeTarget "图片浏览器Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C25FB41CC9F843001FF66B /* Debug */,
+				18C25FB51CC9F843001FF66B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C25FB61CC9F843001FF66B /* Build configuration list for PBXNativeTarget "图片浏览器UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C25FB71CC9F843001FF66B /* Debug */,
+				18C25FB81CC9F843001FF66B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18C25F7B1CC9F843001FF66B /* Project object */;
+}
